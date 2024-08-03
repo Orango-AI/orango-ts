@@ -1,0 +1,29 @@
+{
+  "name": "@orango-ai/sdk",
+  "version": "1.0.0",
+  "description": "The Orango AI Typescript SDK",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "dotenv -e .env playwright test",
+    "build": "tsc --outDir dist",
+    "dev": "dotenv -e .env tsc -w --outDir dist"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.17",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^22.1.0",
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
+    "mocha": "^10.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "author": "",
+  "dependencies": {
+    "@playwright/test": "^1.45.3",
+    "axios": "^1.7.3"
+  }
+}
